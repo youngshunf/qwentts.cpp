@@ -1,0 +1,18 @@
+hasn-qwentts 是 qwentts.cpp 的 infra fork，代码继续遵循 MIT（根目录 LICENSE）。
+保留上游原版权行：Copyright (c) 2023-2026 The omnivoice.cpp authors。
+上游地址：https://github.com/ServeurpersoCom/qwentts.cpp
+起始提交：51512f129a7419567f4b8abfb06801451789b8f1
+GGML 地址：https://github.com/ServeurpersoCom/ggml.git
+GGML 钉死提交：2eddaf94a8cdbbf1c30017d28313cd661a9da543（其代码遵循自身 MIT）。
+
+本 fork 新增 CPU 线程数配置、严格设备选择、无模型后端探测、实际后端查询、
+三平台构建入口与专项验证。模型权重不包含在源码仓或库构建产物中。
+
+Qwen3-TTS 权重和 tokenizer 的模型卡声明 Apache-2.0；全文来自
+https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE，保存在
+LICENSES/Apache-2.0-Qwen3-TTS.txt。来源仓和查询到的精确修订见
+LICENSES/weight-sources.json。GGUF 转换权重来源是 Serveurperso/Qwen3-TTS-GGUF。
+权重发行包还必须绑定实际文件 sha256 和来源修订，不能仅以本 NOTICE 代替产物溯源。
+
+上述模型仓没有单独的 LICENSE 文件；原始模型卡、上游许可声明及精确来源必须随
+可信安装包保留。本 NOTICE 不创设额外权利或替换上游许可证。
